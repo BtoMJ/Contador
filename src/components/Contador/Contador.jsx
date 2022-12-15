@@ -1,10 +1,10 @@
 import React from 'react';
 import './Contador.css';
 
-function Contador() {
+function Contador({ clicks}) {
   return (
     <div className='contador-container'>
-        Contador
+        {clicks}
     </div>
   )
 }
