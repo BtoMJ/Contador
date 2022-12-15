@@ -7,18 +7,26 @@ button{
     height: 60px;
     padding: 10px 30px;
     margin: 20px 0;
-    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.01);
     border-radius: 15px;
     font-size: 1.5rem;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #FFF;
+    box-shadow: 0 10px 20px rgba( 0 , 0 , 0 , .5 );
+    transition: 0.5s all ease;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    text-shadow: 0 5px 10px #00000080;
 }
 
 .boton-click{
-    background-color: red;
+    background: linear-gradient(0deg, rgba(167,11,11,1) 0%, rgba(255,73,73,1) 80%);
 }
 
 .boton-reset{
-    background-color: blue;
+    background: linear-gradient(0deg, rgba(203,95,0,1) 0%, rgba(255,141,41,1) 60%);
 }

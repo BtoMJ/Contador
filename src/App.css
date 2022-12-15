@@ -4,15 +4,41 @@
   box-sizing: border-box;
 }
 
+html,
+body{
+  background: #06283D;
+}
+
 .App {
-  height: 70vh;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-image: linear-gradient(35deg,rgba(255, 205, 56, 0.9), rgba(255, 205, 56, 0.95)), url("./assets/bg.jpg");
+  background-position:top center;
+  background-repeat: no-repeat;
+  background-size: 180%;
+  animation: fondoAnimado 50s infinite;
 }
 
 .App h1{
   margin-bottom: 50px;
+  color: #FFF;
+  text-shadow: 0 7px 15px #866707;
 }
 
+
+
+@keyframes fondoAnimado {
+  0%{
+      background-position: 0% 50%;
+  }
+  50%{
+      background-position: 100% 50%;
+  }
+  100%{
+      background-position: 0% 50%;
+  }
+}
